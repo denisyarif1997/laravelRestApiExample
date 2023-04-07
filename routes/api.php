@@ -23,3 +23,11 @@ use App\Http\Controllers\ProductController;
 Route::post('create-product', [ProductController::class, 'createData']);
 
 Route::get('get-product', [ProductController::class, 'getData']);
+
+Route::get('get-all-product', [ProductController::class, 'getAllData']);
+
+Route::get('searh-product', [ProductController::class, 'searchData']);
+
+Route::patch('update-product/{id}', [ProductController::class, 'updateData']);
+
+Route::delete('delete-product/{id}', [ProductController::class, 'deleteData']);
