@@ -28,7 +28,7 @@ class ProductController extends Controller
             'desc' => $request->desc
         ]);
         return response()->json([
-            'message' => 'success create data'
+            'message' => 'Sukses menambahkan Produk'
         ]);
     }
 
@@ -76,7 +76,7 @@ class ProductController extends Controller
         ]);
 
         return response()->json([
-            'message' =>  'success update data'
+            'message' =>  'Sukses Mengubah Product'
         ]);
     }
 
@@ -85,7 +85,7 @@ class ProductController extends Controller
     {
         Product::destroy($id); // The function receives an ID of the product to be deleted as a parameter "$id". The function then uses the Eloquent ORM (Object-Relational Mapping) to find and delete the record with that ID from the "Product" table. The Product::destroy() method deletes the record using the primary key of the product.
         return response()->json([
-            'message' => 'success delete data'
+            'message' => 'Sukses menghapus Product'
         ]);
     }
 
